@@ -3,7 +3,7 @@ CREATE TABLE fact_price_history
   id integer unique,
   dateid integer not null,
   currencyid integer not null,
-  priceusd decimal not null,
+  priceusd double precision not null,
   primary key(id,dateid,currencyid),
   foreign key(dateid) references dimension_date(dateid),
   foreign key(currencyid) references dimension_currencies(currencyid)
