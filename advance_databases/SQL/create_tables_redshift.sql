@@ -24,7 +24,7 @@ CREATE TABLE dimension_currencies
   primary key(currencyid)
 );
 
-// Load tables into Redshift
+
 COPY dimension_date(dateid,dateday,datemonth,dateyear)
 from
   's3://stuffalexylaura/dimension_date_export.csv'
